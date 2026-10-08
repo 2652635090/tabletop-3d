@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { ARROW_MAX, ARROW_MIN, AUDIO_KEY, BOARD_HOME, CARD_BACKS, COUNTER_STEP_MAX, COUNTER_STEP_MIN, COUNTER_V_MAX, COUNTER_V_MIN, GRAM_DUR_MAX, HOUR_MAX, HOUR_MIN, LAYER_MAX, MP3_BY_MAX, MP3_DUR_MAX, PALETTE, SCALE_MAX, SCALE_MIN, SLOT_MAX, SLOT_MIN, TABLE, TRACK_MARK_MAX, TRACK_MAX, TRACK_MIN, TABLET_PAGE_MAX, TABLET_POS_MAX, TABLET_REV_MAX, cardText, clamp, clampTilt, counterSpot, fixBackImg, fixBook, fixCard, fixCounter, fixGram, fixHour, fixMp3, fixShield, fixSlot, fixSpinner, fixStat, fixTablet, fixTrack, fixTray, fixZone, gridable, gridHug, inTable, isContainer, isMat, isWebUrl, lockable, mmss, onBoard, pinnable, presetOf, restInTable, scaleOf, timerOf, uid } from "./catalog";
 import { anchorOf, resolvePlacement, restDrop, type Anchor } from "./physics";
 import { resolveDrop, capturesOf } from "./landing";

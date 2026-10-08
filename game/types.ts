@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 /** 桌面物件与牌局状态的共享类型：所有可同步内容都必须是可 JSON 序列化的纯数据。 */
 
 export type Kind = "board" | "pawn" | "disc" | "cube" | "die" | "card" | "pile" | "box" | "bag" | "token" | "timer" | "pointer" | "arrow" | "text" | "zone" | "stat" | "slot" | "calc" | "spinner" | "track" | "shield" | "hour" | "book" | "gram" | "mp3" | "counter" | "tray" | "tablet";

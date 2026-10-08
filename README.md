@@ -199,10 +199,11 @@ TABLETOP_SITE_URL=https://你部署的那台/ npm run android:apk
 
 ## 许可
 
-**GPL-3.0-only**，全文见 `LICENSE`。
+**GPL-3.0-only**，全文见 `LICENSE`。仓库地址：<https://github.com/2652635090/tabletop-3d>。
 
-- 版权行请每个改动者按自己的情况处理：源码文件默认沿用 `Copyright (C) 2026` 的项目声明，`LICENSE` 本体不含具体署名。
-- `vendor/shadcn-tailwind-4.13.0.css` 是随模板进来的第三方样式表，它自己的许可证保留在同目录的 `vendor/shadcn-tailwind-4.13.0.LICENSE.md`；工程来源与改动见 `PROVENANCE.md`。
+- 每一个第一方源码文件（`.ts` / `.tsx` / `.mjs` / `.js` / `.css`）顶部都有两行声明：`SPDX-License-Identifier: GPL-3.0-only` 与 `Copyright (C) 2026 2652635090`。署名用的是 GitHub 的 noreply 身份，`LICENSE` 本体不含具体署名。新增文件请照抄这两行（见 `CONTRIBUTING.md`）。
+- 你要改动或分发这个仓库时，GPL-3.0 的第三条与第五条要求你保留这些声明、标注改动，并以同一许可证放出衍生版本。
+- `vendor/shadcn-tailwind-4.13.0.css` 是随模板进来的第三方样式表，它自己的许可证保留在同目录的 `vendor/shadcn-tailwind-4.13.0.LICENSE.md`；工程来源与改动见 `PROVENANCE.md`。`android/gradlew` 与 `gradlew.bat` 是 Gradle 官方 wrapper 自带文本，沿用其 Apache-2.0。
 - `react` / `three` / `vite` / `tailwindcss` / `ws` 等依赖各自遵守其上游许可证，不随本仓库重新授权。
 - 内置牌组内容（扑克、狼人杀角色名、塔罗大阿卡纳、《潮汐》）都是公版或本项目原创的文字与程序化绘制，不含任何第三方桌游的牌面文本或美术资产。
 - 你上传的图片、音频与牌组包数据不属于仓库内容，也不会被仓库收集。

@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 /**
  * 落点的唯一算法：格子吸附 → 按真实投影贴住围板 → 找支撑面（托不住就滑开）→ 挤开别人 → 带塌上层。
  * 拖动预览和松手提交都走这一份，归约里的 move 用的是同一套 restDrop/resolvePlacement，

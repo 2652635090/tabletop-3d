@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 桌游房间同步：单表 rooms，写入使用 version 条件更新实现单行比较交换。
 // 牌局规则在客户端归约，服务端只做校验、版本仲裁与权威状态存取。
 

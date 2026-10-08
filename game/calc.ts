@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 /** 四则计算器：只吃按钮拼出来的表达式，不走 eval；面板与 3D 摆件共用这一套状态机。 */
 
 export const CALC_MAX = 40;

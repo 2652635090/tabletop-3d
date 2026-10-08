@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 自建实时网关：HTTP 静态站点 + 同端口 WebSocket 房间广播。
 // 之所以把前端也放在这里，是因为 https 的站点打不开 ws:// 的连接（混合内容会被浏览器拦掉）。
 import { createServer } from "node:http";

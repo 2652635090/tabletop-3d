@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 /**
  * 可选牌组包：牌面文字放在站点静态目录里的 `public/packs/index.json`，启动时读一次。
  *

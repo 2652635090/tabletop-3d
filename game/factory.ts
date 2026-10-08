@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { ARROW_MAX, ARROW_MIN, BOARD_HOME, BOARDS, BOOK_SECTIONS, PALETTE, SHIELD_DEFAULT, TABLE, TRAY_DEFAULT, blankDeck, cardText, clamp, fixBook, fixCounter, fixGram, fixHour, fixMp3, fixShield, fixSlot, fixSpinner, fixStat, fixTablet, fixTrack, fixTray, fixZone, kindOfShape, matSpec, timerOf, uid } from "./catalog";
 import { emptyState, MAX_PILE } from "./state";
 import { poker54, tideDeck, werewolfDeck } from "./decks";

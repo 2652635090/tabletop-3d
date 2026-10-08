@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { AUDIO_KEY, BOOK_CHARS, BOOK_PAGE_MAX, COUNTER_STEP_MAX, COUNTER_STEP_MIN, COUNTER_V_MAX, COUNTER_V_MIN, GRAM_NAME_MAX, GUARD_MAX, GUARD_MIN, HOUR_DEFAULT, HOUR_MAX, HOUR_MIN, MP3_DUR_MAX, MP3_NAME_MAX, PALETTE, REACH_DEFAULT, REACH_MAX, REACH_MIN, SHIELD_H_MAX, SHIELD_H_MIN, SHIELD_MAX, SHIELD_MIN, SLOT_MAX, SLOT_MIN, SPIN_MAX, SPIN_MIN, STAT_MAX, STAT_MIN, TABLE, TABLET_PAGE_MAX, TABLET_POS_MAX, TABLET_REV_MAX, biliOf, TIMER_MAX, TIMER_MIN, TRACK_DEFAULT, TRACK_MARK_MAX, TRACK_MAX, TRACK_MIN, TRAY_MAX, TRAY_MIN, ZONE_MAX, ZONE_MIN, deg360, fixBook, fixCounter, fixGram, fixHour, fixMp3, fixShield, fixSlot, fixSpinner, fixTablet, fixTrack, fixTray, footprintOf, gramPos, gridable, inTable, inZone, isContainer, lockable, mp3Pos, presetOf, remainingOf, slotCards, slotSize, slotSpot, tabletPos, trackMark, uid } from "./catalog";
 import { CALC_KEYS, calcPress } from "./calc";
 import { makeArrow, makeBoard, makeBook, makeCalc, makeCard, makeContainer, makeCounter, makeDie, makeGram, makeHandCard, makeHourglass, makeMat, makeMp3, makePad, makePile, makePiece, makePointer, makeShield, makeSlotStrip, makeSpinner, makeStatMat, makeTablet, makeText, makeTimer, makeToken, makeTrack, makeTray, makeZone, nextSpot } from "./factory";

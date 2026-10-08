@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 跑数据层用例（dev/tabletop-preview/rules-check.ts）。
 // 这个文件没有 npm script 也能跑，但 Node 直接跑不了它——它 import 别的 TS 模块时不写扩展名，
 // 只有 tsc 那套参数能吃下，而根 package.json 是 "type": "module"，编出来的 CJS 还要一份 local package.json。

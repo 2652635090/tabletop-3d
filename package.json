@@ -1,7 +1,28 @@
 {
   "name": "tabletop-3d",
   "version": "0.1.0",
+  "description": "牌桌 · 3D 桌游沙盒：浏览器里的真 3D 桌游模拟器，Three.js 渲染 + 桌面物理 + WebSocket 联网同局，纯 Node 服务端可自托管。",
   "license": "GPL-3.0-only",
+  "author": "2652635090 <2652635090@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2652635090/tabletop-3d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2652635090/tabletop-3d/issues"
+  },
+  "homepage": "https://github.com/2652635090/tabletop-3d#readme",
+  "keywords": [
+    "tabletop-simulator",
+    "board-game",
+    "card-game",
+    "threejs",
+    "webgl",
+    "multiplayer",
+    "real-time",
+    "game-physics",
+    "self-hosted"
+  ],
   "engines": {
     "node": ">=22.12.0"
   },

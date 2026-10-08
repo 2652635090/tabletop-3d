@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 本地预览用的房间服务：用内存假 Supabase 跑真实的 functions/handler.mjs。
 // 仅提供开发期联机模拟，不参与发布产物。
 import { createServer } from "node:http";

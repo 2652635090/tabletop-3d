@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { useCallback, useEffect, useRef, useState } from "react";
 import { CloudOff, History, LogIn, RefreshCw, Trash2, X } from "lucide-react";
 import type { RomMeta, RomPayload } from "@/game/api";

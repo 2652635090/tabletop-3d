@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { ARROW_MAX, ARROW_MIN, AUDIO_KEY, IMAGE_KEY, LAYER_MAX, SPIN_MAX, SPIN_MIN, TRACK_MARK_MAX, TRACK_MAX, TRACK_MIN, clampTilt, fixBackImg, fixBook, fixCard, fixCounter, fixGram, fixHour, fixMp3, fixShield, fixSlot, fixSpinner, fixStat, fixTablet, fixTrack, fixTray, fixZone, gridable, pinnable, timerOf } from "./catalog";
 import { fixCalcExpr } from "./calc";
 import { fixPerms, type Perms } from "./perm";

@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 实时通道：一条常驻 WebSocket 走完整套房间协议，服务器一有变动就推给我们。
 // 连不上时 useTable 会自动改回 /functions 轮询，所以这里只负责“连上时有多快、断了多快回来”。
 import { apiError, readOnline, readRom, readRoms, readRooms, readRomSave, readRoom, readSnapshot, type CommitResult, type ListedRoom, type LobbyUser, type Owner, type RomMeta, type RomPayload, type RomSaveInput, type RomSaveResult, type RoomPatch, type RoomSnapshot, type Who } from "./api";

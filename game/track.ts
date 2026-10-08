@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { ApiError } from "./api";
 import { adoptClip, audioKeyOf, CLIP_MAX_BYTES, localClip } from "./audio";
 import { MP3_DUR_MAX, MP3_CHUNK } from "./catalog";

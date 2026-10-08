@@ -72,3 +72,12 @@ CHECK_BASE=http://127.0.0.1:29920 node dev/public-check.mjs
 ## 授权
 
 贡献即表示你同意你的改动以本仓库的 **GPL-3.0-only** 许可证发布，并且你有权这样授权（自己写的，或已按兼容许可证取得的）。不要提交你无权这样发布的内容。
+
+新建一个第一方源码文件时，顶部带上与其余文件一致的两行声明：
+
+```ts
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+```
+
+`vendor/` 与 `android/gradlew*` 里的第三方文件保持它们原本的声明，不要替换。

@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 自建实时网关的回归校验：真的起一个 server/index.mjs，用两个 WebSocket 客户端跑完
 // create/join/commit/冲突/presence/像素/ROM 存档/公开大厅/重启快照，并测一次“本机推送延迟”。
 // 用法：node dev/realtime-check.mjs [端口]

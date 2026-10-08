@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { makeBoard, starter } from "../../game/factory";
 import { apply, describe, MAX_OBJECTS, MAX_PILE } from "../../game/state";
 import { api, readRom, readRomSave } from "../../game/api";

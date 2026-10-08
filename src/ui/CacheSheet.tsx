@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { useCallback, useEffect, useState } from "react";
 import { Disc3, Eraser, Image as ImageIcon, RefreshCw, Trash2, Wifi, X } from "lucide-react";
 import { formatBytes, inventory, localBytes, type CacheGroup, type CacheRow } from "@/game/inventory";

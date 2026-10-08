@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 /**
  * 浏览器里手写的 ZIP 读取器：只认 store 与 deflate 两种最常见的存法，
  * 唯一用途是把「一整包图片」导成牌堆，所以宁可跳过读不懂的条目也不引第三方依赖。

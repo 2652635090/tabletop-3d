@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 唱片字节那条路由的契约：自己起一份真实的自建网关（server/index.mjs），
 // 拿真的字节 PUT 上去、GET 回来，把状态码与「GET 一个字节都不写」这两条钉死。
 // 只在开发期跑，不参与发布产物。用法：node dev/audio-check.mjs [端口]

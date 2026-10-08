@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 // 房间存储：内存为准，磁盘做延迟快照。create/join/sync/commit/presence 的语义与
 // functions/handler.mjs 的 Supabase 版本一一对应，换传输层不换规则。
 // 这一份还比 Edge Function 多两层：房间元信息（房主口令、公开私密、成员权限表、黑名单）

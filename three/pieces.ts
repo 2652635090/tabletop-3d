@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import * as THREE from "three";
 import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
 import { BOOK_SPREAD, COUNTER_BODY, GRAM_BODY, HOUR_H, HOUR_R, MP3_BODY, SHIELD_BAND, SPIN_R, TABLET_BODY, TABLET_SCREEN, TRACK_MARK_MAX, TRAY_H, TRAY_WALL, boardSize, boardThickness, bookSpread, fixBook, fixCounter, fixGram, fixHour, fixMp3, fixShield, fixSlot, fixSpinner, fixTablet, fixTrack, fixTray, hourLeft, hourRatio, mmss, piecePoints, pieceSize, remainingOf, shapeOf, slotSize, spinAngle, trackOffset, trackSize } from "@/game/catalog";

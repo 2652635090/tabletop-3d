@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 /**
  * 画面偏好：灯光亮度与画质档，跟着这台浏览器走。
  * 和 game/handbar.ts 的排版偏好同一套路子——读的时候一律收口一遍，写失败就当作没写。

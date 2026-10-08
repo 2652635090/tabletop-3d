@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { BellRing, ChevronDown, ChevronUp, Dices, Eye, Gamepad2, Hand, Keyboard, Layers, LogIn, Maximize, MessageSquare, Minimize, MonitorSmartphone, Orbit, Rotate3D, RotateCcw, ShieldCheck, SlidersHorizontal, Sparkles, Sun, Users, Wifi, X } from "lucide-react";
 import { starter } from "@/game/factory";

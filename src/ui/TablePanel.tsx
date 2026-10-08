@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Archive, Clock, Copy, Crown, DatabaseBackup, Fingerprint, LogOut, Megaphone, MessageSquare, Minus, Plus, Save, Send, ShieldCheck, Users, Wifi, X } from "lucide-react";
 import type { Presence, TableState } from "@/game/types";

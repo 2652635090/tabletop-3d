@@ -1,3 +1,6 @@
+/* 牌桌 · 3D 桌游沙盒 —— SPDX-License-Identifier: GPL-3.0-only
+   Copyright (C) 2026 2652635090 · 许可全文见仓库根目录的 LICENSE */
+
 import { useEffect, useRef, useState } from "react";
 import { Boxes, BookOpen, Calculator, CircleDot, Compass, Copy, Dices, Disc3, FileArchive, Frame, Gauge, Gamepad2, Hash, Headphones, Hourglass, ImagePlus, Lock, Magnet, Maximize, MonitorPlay, Moon, MousePointer2, Package, RectangleHorizontal, Ruler, Shapes, Shield, Sparkles, Tablet, Tally1, Timer, Type, Waves, ArrowRight, Utensils } from "lucide-react";
 import { BOARDS, PALETTE_TABS, PIECE_SETS, SHAPES, SHIELD_BAND, TIMER_MIN, ZONE_MAX, COPY_MAX, COPY_MIN, boardHint, clamp, fixCopies, mmss, blankDeck } from "@/game/catalog";
