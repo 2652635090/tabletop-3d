@@ -1,0 +1,36 @@
+[
+  {
+    "id": "demo-quests",
+    "name": "示例 · 冒险任务",
+    "hint": "12 张：只有牌名与说明，演示最简写法",
+    "cards": [
+      { "back": "classic", "label": "护送商队", "cat": "旅途", "art": "队", "color": "#3f9d63", "text": "三名角色同行，路上不得有任何一张「伏击」在场。" },
+      { "back": "classic", "label": "夜守灯塔", "cat": "旅途", "art": "塔", "color": "#3f9d63", "text": "整轮不能出牌；结束时从牌堆顶摸两张。" },
+      { "back": "classic", "label": "修补渡口", "cat": "建造", "art": "桥", "color": "#2c4a7c", "text": "弃一张手牌，把一块棋子放到本区任一格上。" },
+      { "back": "classic", "label": "开凿水井", "cat": "建造", "art": "井", "color": "#2c4a7c", "text": "此后每轮可以多摸一张牌。" },
+      { "back": "classic", "label": "集市议价", "cat": "交涉", "art": "市", "color": "#d9a026", "text": "与任一玩家换一张手牌，双方都亮出来。" },
+      { "back": "classic", "label": "借一步路", "cat": "交涉", "art": "路", "color": "#d9a026", "text": "本回合可以穿过别人占着的格子。" },
+      { "back": "classic", "label": "探子回报", "cat": "情报", "art": "探", "color": "#8a5cc4", "text": "看一名玩家的手牌，选一张置入弃牌堆。" },
+      { "back": "classic", "label": "错认身影", "cat": "情报", "art": "影", "color": "#8a5cc4", "text": "指认一名玩家手里的牌；猜对则他弃之，猜错则你弃一张。" },
+      { "back": "classic", "label": "潮汛将至", "cat": "情报", "art": "潮", "color": "#8a5cc4", "text": "把计时器拨到 60 秒并开始。" },
+      { "back": "classic", "label": "一夜风雪", "cat": "变故", "art": "雪", "color": "#c8443c", "text": "所有玩家各弃一张手牌，没有手牌的不用弃。" },
+      { "back": "classic", "label": "断桥", "cat": "变故", "art": "断", "color": "#c8443c", "text": "移除场上的一张「桥」类标记。" },
+      { "back": "classic", "label": "无名墓碑", "cat": "变故", "art": "碑", "color": "#c8443c", "text": "本轮结束后翻开弃牌堆顶三张，人人可拿其中一张。" }
+    ]
+  },
+  {
+    "id": "demo-ranks",
+    "name": "示例 · 带点数花色",
+    "hint": "8 张：演示 rank / suit / art 的组合",
+    "cards": [
+      { "back": "poker", "rank": "A", "suit": "s", "cat": "黑桃", "art": "♠" },
+      { "back": "poker", "rank": "K", "suit": "s", "cat": "黑桃", "art": "♠" },
+      { "back": "poker", "rank": "Q", "suit": "h", "cat": "红桃", "art": "♥" },
+      { "back": "poker", "rank": "10", "suit": "h", "cat": "红桃", "art": "♥" },
+      { "back": "poker", "rank": "7", "suit": "d", "cat": "方块", "art": "♦" },
+      { "back": "poker", "rank": "4", "suit": "d", "cat": "方块", "art": "♦" },
+      { "back": "poker", "rank": "3", "suit": "c", "cat": "梅花", "art": "♣" },
+      { "back": "poker", "rank": "2", "suit": "c", "cat": "梅花", "art": "♣" }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.tsbuildinfo
+.qoder-sites/
+.qoder-sites.json
+
+# 本地工具状态：编辑器/助手技能、Qoder Sites 描述符（内含云端资源 id）
+.qoder/
+*.qoder.site
+
+# 我自己的上线线路：服务器地址与 SSH 细节只留在这台机器上，不进仓库
+scripts/deploy.mjs
+OPS-PRIVATE.md
+.deploy/
+
+# 一次性草稿与验证脚手架
+.tmp/
+.tmp-*/
+dev/ui-rig/
+*.log
+
+# 安卓构建产物（cap sync 会重新生成 assets/capacitor.config.json）
+android/app/build/
+android/build/
+android/.gradle/
+android/app/src/main/assets/
+android/capacitor-cordova-android-plugins/
+*.jks
+*.keystore
+local.properties
+
+# 本地服务端数据
+server/node_modules/
+data/
+
+# 可选牌组包：里面是别人家的牌面文字，不进仓库（写法见 README 的「可选牌组包」）
+public/packs/

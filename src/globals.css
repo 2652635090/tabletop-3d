@@ -1,0 +1,243 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+@utility scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility scrollbar-gutter-stable {
+  scrollbar-gutter: stable;
+}
+
+/* 深夜书房里的实木牌桌：深墨底、暖黄铜强调、羊绒呢面 */
+:root {
+  color-scheme: dark;
+  --background: #0b0d10;
+  --foreground: #ece7dd;
+  --card: #14171c;
+  --card-foreground: #ece7dd;
+  --popover: #171b21;
+  --popover-foreground: #ece7dd;
+  --primary: #e8b978;
+  --primary-foreground: #1a1206;
+  --secondary: #212630;
+  --secondary-foreground: #ded7cb;
+  --muted: #1b1f26;
+  --muted-foreground: #9aa3ae;
+  --accent: #2a2f3a;
+  --accent-foreground: #f4ead8;
+  --destructive: #d9534f;
+  --border: #ffffff1f;
+  --input: #ffffff2b;
+  --ring: #e8b97899;
+  --chart-1: #e8b978;
+  --chart-2: #4fa377;
+  --chart-3: #5b8fc7;
+  --chart-4: #c76a6a;
+  --chart-5: #b48ad4;
+  --radius: 0.5rem;
+  /* 顶栏与底条的实测高度由 App.tsx 写入；默认值取偏大的安全值，宁可留白也别压住最后一行 */
+  --header-h: 3.5rem;
+  --strip-h: 11rem;
+  --sidebar: #14171c;
+  --sidebar-foreground: #ece7dd;
+  --sidebar-primary: #e8b978;
+  --sidebar-primary-foreground: #1a1206;
+  --sidebar-accent: #212630;
+  --sidebar-accent-foreground: #ece7dd;
+  --sidebar-border: #ffffff1f;
+  --sidebar-ring: #e8b97899;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: ui-serif, Georgia, "Songti SC", "SimSun", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overscroll-behavior: none;
+}
+
+.panel {
+  background: color-mix(in oklab, var(--card) 84%, transparent);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px) saturate(120%);
+  box-shadow: 0 18px 40px -18px rgb(0 0 0 / 0.85), inset 0 1px 0 rgb(255 255 255 / 0.05);
+}
+
+.panel-title {
+  font-family: var(--font-serif);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: color-mix(in oklab, var(--primary) 65%, var(--muted-foreground));
+}
+
+.slot {
+  background: rgb(255 255 255 / 0.04);
+  border: 1px solid rgb(255 255 255 / 0.07);
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+}
+
+.slot:hover {
+  background: rgb(232 185 120 / 0.12);
+  border-color: rgb(232 185 120 / 0.45);
+}
+
+.slot:active {
+  transform: translateY(1px);
+}
+
+.slot[data-active="true"] {
+  background: rgb(232 185 120 / 0.2);
+  border-color: rgb(232 185 120 / 0.7);
+}
+
+/* 组件库的格子：大小由这套规矩定，不由里面那几个字占几行决定。
+   一格 = 标题 1 行 + 说明 2 行的预算，标题超了省略号，说明超了两行裁掉（整句仍在 title 里）。 */
+.tile {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.375rem 0.5rem;
+  text-align: start;
+}
+
+/* 写成 .slot.tile 才压得过下面 pointer:coarse 里 .slot 那条 2.125rem 的地板。
+   60px = 12 内边距 + 标题一行 + 说明两行，正好把所有格子钉死，不随字数变 */
+.tile,
+.slot.tile {
+  min-height: 60px;
+}
+
+.tile-label {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tile-hint {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.log-line + .log-line {
+  border-top: 1px solid rgb(255 255 255 / 0.05);
+}
+
+kbd.key {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: rgb(0 0 0 / 0.35);
+  color: var(--muted-foreground);
+}
+
+/* 窄屏整体缩一档：面板给桌面让出视野 */
+@media (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* 触摸设备：粗指针下收紧点击高度，保留最小可点面积 */
+@media (pointer: coarse) {
+  /* iOS 只看算出来的字号：输入框小于 16px，一聚焦就放大整页，面板跟着错位。
+     这里必须压过组件上写死的 text-xs，所以用 !important；已经够大的字号原样保留。 */
+  input:not([type="range"]):not([type="file"]),
+  textarea,
+  select {
+    font-size: max(16px, 1em) !important;
+  }
+
+  button[data-slot="button"]:not([data-size^="icon"]) {
+    min-height: 2rem;
+  }
+
+  .slot {
+    min-height: 2.125rem;
+  }
+
+  /* 格子里按下去的是这一整块，给它够得着拇指的高度。px 写死，别跟着 html 字号漂 */
+  .tile,
+  .slot.tile {
+    min-height: 64px;
+  }
+
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* 长按交给牌桌：手指按住桌面文字不再选中一片、也不弹系统的复制/存储浮层。
+     输入框、下拉和可编辑区留着，昵称与聊天照常能改。 */
+  body,
+  canvas {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  input,
+  textarea,
+  select,
+  [contenteditable="true"] {
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-touch-callout: default;
+  }
+}
